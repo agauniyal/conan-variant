@@ -2,7 +2,7 @@ from conans import ConanFile, tools
 
 class VariantConan(ConanFile):
     name = "variant"
-    version = "1.2.2"
+    version = "1.3.0"
     license = "BSL 1.0"
     url = "https://github.com/mpark/variant"
     description = "C++17 std::variant for C++11/14/17 https://mpark.github.io/variant"
@@ -12,4 +12,4 @@ class VariantConan(ConanFile):
         self.run("cd variant && git checkout single-header")
 
     def package(self):
-        self.copy(pattern="*.hpp", src="variant/v1.2.2", dst="include", keep_path=False)
+        self.copy(pattern="*.hpp", src="variant/v1.3.0", dst="include", keep_path=False)
